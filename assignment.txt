@@ -1,0 +1,64 @@
+
+-- CREATING AUTHOR TABLE AND INSERTING VALUES
+use book_detail;
+create table Author (Author_id int primary key, Name varchar(30), age int, Address varchar(30)); 
+insert into Author values(110, 'Getachew A', 36, 'Jimma Ethiopia');
+insert into Author values(121, 'Abebe M', 45, 'Adama Ethiopia');
+insert into Author values(211, 'Gemechu T', 50, 'Jimma Ethiopia');
+insert into Author values(132, 'Seid F', 27, 'BahirDar Ethiopia');
+insert into Author values(111, 'Teka M', 34, 'Addis Abeba Ethiopia');
+
+
+
+-- CREATING BOOK TSBLE AND INSERTING VALUES
+use book_detail;
+create table Book (ISBN int primary key, Title varchar(30), publish_date date, Author_id int references Author(Author_id));
+insert into Book values(123456, 'Fundamentals of database', '2010-09-12', 110);
+insert into Book values(213456, 'Data structure and algorithm', '2011-09-09', 121);
+insert into Book values(012345, 'Programming II', '2018-09-12', 121);
+insert into Book values(098765, 'System analysis and design', '2017-01-04', 132);
+
+
+
+-- CREATING BORROWED TABLE AND INSERTING VALUES
+use book_detail;
+create table Borrowed (ISBN int references Book(ISBN), Stu_id varchar(10) references Student(ID), Borrowing_date date, Return_date date);
+insert into Borrowed values(123456, 'RU123/10', '2019-09-12', '2019-09-28');
+insert into Borrowed values(213456, 'RU123/10', '2019-09-09', '2019-09-29');
+insert into Borrowed values(012345, 'RU333/10', '2019-12-09', '2019-12-30');
+insert into Borrowed values(098765, 'RU333/10', '2019-04-01', '2019-05-01');
+insert into Borrowed values(123456, 'RU124/10', '2019-09-12', '2019-10-12');
+
+
+
+-- CREATING STUDENT TABLE AND INSERTING VALUES
+use book_detail;
+create table Student(ID Varchar(10) primary key, Name varchar (20), Departement varchar(10), Birthdate date);
+insert into Student values ('RU123/10', 'Abraham N', 'IT', '2009-09-28');
+insert into Student values ('RU123/11', 'Matiys B', 'CS', '2009-09-29');
+insert into Student values ('RU333/11', 'Birhanu S', 'SE', '2004-12-30');
+insert into Student values ('RU334/10', 'Sara M', 'Civil', '1999-05-01');
+insert into Student values ('RU124/10', 'Gemechu T', 'Electrical', '1999-10-12');
+
+
+
+
+-- EXERCISES
+use book_detail;
+select * from Student where (Departement='IT');  -- 2
+select * from Author where(age>37);              -- 3
+
+select * from Book;
+update Student set Departement ='INFORMATION TECHNOLOGY' where ID='RU123/10';     -- 6
+
+select max(age), min(age), avg(age) from author;   -- 7
+select * from student where name like 'A%';      -- 8
+select * from author where name like 'A%'; 
+
+select student.Name, borrowed.ISBN from student, borrowed where student.ID=borrowed.Stu_id and student.Departement='CS';  -- 9
+create view  AUTHOR_VIEW as select author.Author_id, author.Name, book.Title from author, book;  -- 10
+
+select * from student where departement='civil';   -- 11
+
+create table it (departement varchar(20), id varchar(9), name varchar(10), birthdate date, ISBN int, borrowing_date date, return_date date, borrowed_book varchar(20), publish_date date, author_id int); -- 12
+select * from borrowed group by Stu_id having count(*)>1;  -- 12
