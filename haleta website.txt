@@ -1,0 +1,51 @@
+                        haleta website
+============================================================
+  #features to add
+-> blog section(place not specified ) 
+=> flow of sections
+ -> home 
+ -> about
+ -> service/why us
+ -> how it works
+ -> join
+ -> contact 
+ -> footer
+=> functionalities
+  -> the language conversion
+
+
+
+
+=========end for haleta========================
+                        debo website
+============================================================
+   => flow of section 
+->home
+->about
+-> service
+-> blogs
+->order
+->contact
+->footer
+  #features to add
+->chat 
+
+
+ forme 
+-------
+-home 
+-about
+-service
+
+tame
+----
+-order
+-contact
+-footer
+
+kibru
+------
+-chat 
+-blog 
+  			
+ 
