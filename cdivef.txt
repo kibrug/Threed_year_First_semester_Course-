@@ -1,0 +1,24 @@
+access control editor access is denied. So if you want to solve your issue please watch this video till the end and learn how to fix it. Or also you can call us at +919015367522 for any technical support with nominal charges.
+
+For English viewer go through the below step:-
+1) Start your Windows in Safe mode or Safe mode with command prompt
+2) Logon as administrator or administrative right user account
+3) Go to Run and type = Regedit
+     or if Regedit is not working then start the computer in Safe mode with command prompt
+      Type Regedt32
+ 
+ Go to the following registry key path:
+ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System
+ Locate the following REG_DWORD value:
+ EnableLUA = 0
+ Optional step to suppress UAC consent prompt dialog, locate the following REG_DWORD value:
+ ConsentPromptBehaviorAdmin = 0
+ ConsentPromptBehaviorUser = 0
+ Exit from Registry Editor and restart the computer to turn off the UAC
+4) Reboot the computer and start in Normal mode if working, otherwise in Safe mode
+5) Goto My computer - Right click on C: drive - Properties - Security - Advance - And now try to change   Ownership of the drive and set the permission for it.
+6) Done! you have now access to C: drive.
+7) Enable back your UAC as per previous registry value.
+ Go to Run and type
+ Msconfig
+ Go to tools - Change UAC setting - Launch - Set to default - Reboot and Done

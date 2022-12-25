@@ -1,0 +1,115 @@
+1.Security vulnerabilities are any kind of software or hardware defect
+2.exploit is the term used to describe a program written to take advantage of a known vulnerability
+3.Software vulnerabilities are usually introduced by errors in the operating system or application code, despite all the effort companies put into finding and patching software vulnerabilities
+4.2015, a major vulnerability, called SYNful Knock, was discovered in Cisco IOS
+5.goal of software updates is to stay current and avoid exploitation of vulnerabilities
+6.Hardware vulnerabilities are often introduced by hardware design flaws
+7.Rowhammer exploit allows data to be retrieved from nearby address memory cells, even if the cells are protected.
+8.Hardware vulnerabilities are specific to device models and are not generally exploited through random compromising attempts
+
+Categorizing Security Vulnerabilities
+
+  1.Buffer overflow 
+  2.Non-validated input
+  3.Race conditions 
+  4.Weaknesses in security practices
+  5.Access-control problems 
+1.Buffer overflow – This vulnerability occurs when data is written beyond the limits of a buffer.
+
+2.Non-validated input This data coming into the program could have malicious content, designed to force the program to behave in an unintended way
+
+3.Race condition becomes a source of vulnerability when the required ordered or timed events do not occur in the correct order or proper timing.
+4.Weaknesses in security practices – Systems and sensitive data can be protected through techniques such as authentication, authorization, and encryption
+5.Access-control problems – Access control is the process of controlling who does what and ranges from managing physical access to equipment to dictating who has access to a resource
+
+
+Types of Malware
+
+1.Spyware –
+ This malware is design to track and spy on the user. Spyware often includes activity trackers, keystroke collection, and data capture
+2.Adware –
+ Advertising supported software is designed to automatically deliver advertisements. 
+3.Bot –
+ From the word robot, a bot is malware designed to automatically perform action, usually online.
+4.Ransomware –
+ This malware is designed to hold a computer system or the data it contains captive until a payment is made.
+5.Scareware 
+forges pop-up windows that resemble operating system dialogue windows.
+6.Rootkit –
+ This malware is designed to modify the operating system to create a backdoor.
+7.Virus 
+- A virus is malicious executable code that is attached to other executable files, often legitimate programs
+8.Trojan horse - 
+A Trojan horse is malware that carries out malicious operations under the guise of a desired operation.
+9.Worms –
+ Worms are malicious code that replicate themselves by independently exploiting vulnerabilities in networks
+10.Man-In-The-Middle (MitM)
+ – MitM allows the attacker to take control over a device without the user’s knowledge
+11.Man-In-The-Mobile (MitMo) 
+– A variation of man-in-middle, MitMo is a type of attack used to take control over a mobile device
+
+Symptoms of Malware
+
+There is an increase in CPU usage.
+There is a decrease in computer speed.
+The computer freezes or crashes often.
+There is a decrease in Web browsing speed.
+There are unexplainable problems with network connections.
+Files are modified.
+Files are deleted.
+There is a presence of unknown files, programs, or desktop icons.
+There are unknown processes running.
+Programs are turning off or reconfiguring themselves.
+Email is being sent without the user’s knowledge or consent.
+
+Social Engineering
+
+Social engineering is an access attack that attempts to manipulate individuals into performing actions or divulging confidential information
+
+Types of social engineering attacks:
+1.Pretexting -
+ This is when an attacker calls an individual and lies to them in an attempt to gain access to privileged data.
+2. Tailgating - 
+This is when an attacker quickly follows an authorized person into a secure location.
+3.Something for Something (Quid pro quo)
+ - This is when an attacker requests personal information from a party in exchange for something, like a free gift
+
+Wi-Fi Password Cracking
+
+Techniques used in password cracking
+1.Social engineering
+ – The attacker manipulates a person who knows the password into providing it.
+2.Brute-force attacks – 
+The attacker tries several possible passwords in an attempt to guess the password
+example:Ophcrack, L0phtCrack, THC Hydra, RainbowCrack, and Medusa.
+3.Network sniffing 
+– By listening and capturing packets sent on the network, an attacker may be able to discover the password if the password is being sent unencrypted (in plain text)
+
+
+Phishing 
+is when a malicious party sends a fraudulent email disguised as being from a legitimate, trusted source. The message intent is to trick the recipient into installing malware on their device, or into sharing personal or financial information
+
+Vulnerability Exploitation
+
+Step 1.
+ Gather information about the target system
+Step 2.
+One of the pieces of relevant information learned in step 1 might be the operating system, its version, and a list of services running on it.
+Step 3.
+ When the target’s operating system and version is known, the attacker looks for any known vulnerabilities specific to that version of OS or other OS services.
+Step 4. 
+When a vulnerability is found, the attacker looks for a previously written exploit to use.
+
+Advanced Persistent Threats
+
+
+One way in which infiltration is achieved is through advanced persistent threats (APTs). They consist of a multi-phase, long term, stealthy and advanced operation against a specific target.
+APT’s purpose is to deploy customized malware on one or multiple of the target’s systems and remain undetected.
+
+    DOS
+Denial-of-Service (DoS) attacks are a type of network attack.
+
+1.verwhelming Quantity of Traffic 
+- This is when a network, host, or application is sent an enormous quantity of data at a rate which it cannot handle. This causes a slowdown in transmission or response, or a crash of a device or service.
+
+2.Maliciously Formatted Packets - This is when a maliciously formatted packet is sent to a host or application and the receiver is unable to handle it
